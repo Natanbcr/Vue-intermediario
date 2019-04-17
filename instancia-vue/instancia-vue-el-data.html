@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script src="https://unpkg.com/vue"></script>
+
+
+<div id="app">
+    {{ titulo }} {{ novaInfo }}
+    <button @click="alterar">ADD</button>
+</div>
+
+<script>
+     const vm = new Vue({
+         el: '#app',
+         data: {
+             titulo: 'Teste 1'
+         },
+         methods: {
+             alterar() {
+                 this.titulo += '!'
+             }
+         }
+     })
+//testando variaveis no console
+</script>
