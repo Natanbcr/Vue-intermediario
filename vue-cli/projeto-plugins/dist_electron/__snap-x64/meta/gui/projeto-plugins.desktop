@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=projeto-plugins
+Comment=
+Exec=projeto-plugins
+Terminal=false
+Type=Application
+Icon=${SNAP}/meta/gui/icon.png
+StartupWMClass=projeto-plugins
+Categories=Utility;
