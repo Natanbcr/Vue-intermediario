@@ -1,27 +1,24 @@
 <template>
 	<v-app>
-      <app-menu></app-menu>
+      <Menu></Menu>
 
-		<app-toolbar> </app-toolbar>
-
+		<Toolbar></Toolbar>
+		
 		<v-content>
-			<app-carousel></app-carousel>
+			<Carousel></Carousel>
 		</v-content>
 
-		<app-footer></app-footer>
+		<Footer></Footer>
 	</v-app>
 </template>
 
 <script>
-import Footer from './components/template/Footer.vue'
-import Carousel from './components/widgets/Carousel.vue'
-import Toolbar from './components/template/Toolbar.vue'
-import Menu from './components/template/Menu.vue'
+import Footer from '@/components/template/Footer.vue'
+import Carousel from '@/components/widgets/Carousel.vue'
+import Toolbar from '@/components/template/Toolbar.vue'
+import Menu from '@/components/template/Menu.vue'
+
 export default {
-	components: {'app-footer' : Footer,
-	 'app-carousel' : Carousel,
-	 'app-toolbar' : Toolbar,
-	 'app-menu' : Menu },
-	
+	components: {Footer, Carousel, Toolbar, Menu }	
 }
 </script>
